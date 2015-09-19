@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fantasy Football</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="toSecondActivity">New Button</string>
+    <string name="title_activity_edit__players__page">Edit_Players_Page</string>
+    <string name="to_Second_Activity_text">EDIT PLAYERS</string>
+    <string name="title_activity_simulate__game">Simulate_Game</string>
+</resources>
