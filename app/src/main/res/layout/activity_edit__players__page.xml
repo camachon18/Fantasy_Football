@@ -39,82 +39,283 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:orientation="vertical"
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:id="@+id/linearLayout3">
+                    android:text="Goals:"
+                    android:id="@+id/textView"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
 
-                    <EditText
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/editText2"
-                        android:background="#f5ff03"
-                        android:textSize="30dp"/>
-
-                    <EditText
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/editText3"
-                        android:background="#f5ff03"
-                        android:textSize="30dp"/>
-
-                    <EditText
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/editText4"
-                        android:background="#f5ff03"
-                        android:textSize="30dp" />
-
-                    <EditText
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/editText5"
-                        android:background="#f5ff03"
-                        android:textSize="30dp"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="vertical"
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/linearLayout3"
-                    android:layout_toEndOf="@+id/linearLayout3"
-                    android:layout_marginLeft="117dp"
-                    android:layout_marginStart="117dp"
-                    android:layout_gravity="center_horizontal">
+                    android:id="@+id/inPlayerGoals"
+                    android:layout_weight="1" />
 
-                    <EditText
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/editText6"
-                        android:background="#f5ff03"
-                        android:textSize="30dp"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
 
-                    <EditText
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/editText7"
-                        android:background="#f5ff03"
-                        android:textSize="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assists:"
+                    android:id="@+id/textView2"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
 
-                    <EditText
-                        android:layout_width="150dp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/editText8"
-                        android:background="#f5ff03"
-                        android:textSize="30dp"/>
-                </LinearLayout>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inPlayerAssists"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saves:"
+                    android:id="@+id/textView3"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inPlayerSaves"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
             </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Goal"
+                    android:id="@+id/addGoal"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Assist"
+                    android:id="@+id/addAssist"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Save"
+                    android:id="@+id/addSave"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yellow Cards:"
+                    android:id="@+id/textView4"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inPlayerYC"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Red Cards:"
+                    android:id="@+id/textView5"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inPlayerRC"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fouls:"
+                    android:id="@+id/textView6"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inPlayerFouls"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Yellow Card"
+                    android:id="@+id/addYellowCard"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Red Card"
+                    android:id="@+id/addRedCard"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Foul"
+                    android:id="@+id/addFoul"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Position:"
+                    android:id="@+id/textView7"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inPlayerPosition"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number:"
+                    android:id="@+id/textView8"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inPlayerNumber"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -166,7 +367,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/inPlayerName"
                     android:background="#fdff01"
-                    android:textSize="25dp" />
+                    android:textSize="25dp"
+                    android:text="Type Player Name" />
 
                 <Button
                     android:layout_width="wrap_content"
