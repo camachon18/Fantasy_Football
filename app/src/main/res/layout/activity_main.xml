@@ -45,28 +45,32 @@
             android:id="@+id/teamMainSpinner"
             android:layout_above="@+id/linearLayout2"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:background="#56ff04" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Wins"
             android:id="@+id/outWins"
-            android:textSize="40dp" />
+            android:textSize="40dp"
+            android:background="#ffdd0b" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Draws"
             android:id="@+id/outDraws"
-            android:textSize="40dp" />
+            android:textSize="40dp"
+            android:background="#ffdd0b"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Losses"
             android:id="@+id/outLosses"
-            android:textSize="40dp" />
+            android:textSize="40dp"
+            android:background="#ffdd0b"/>
 
     </LinearLayout>
 
@@ -98,7 +102,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/inTeamName"
             android:textSize="40dp"
-            android:text="Team Name" />
+            android:text="Team Name"
+            android:background="#6aff49" />
     </LinearLayout>
 
 </RelativeLayout>

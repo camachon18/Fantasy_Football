@@ -17,4 +17,171 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:id="@+id/playerPic"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/linearLayout3">
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText2"
+                        android:background="#f5ff03"
+                        android:textSize="30dp"/>
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText3"
+                        android:background="#f5ff03"
+                        android:textSize="30dp"/>
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText4"
+                        android:background="#f5ff03"
+                        android:textSize="30dp" />
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText5"
+                        android:background="#f5ff03"
+                        android:textSize="30dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/linearLayout3"
+                    android:layout_toEndOf="@+id/linearLayout3"
+                    android:layout_marginLeft="117dp"
+                    android:layout_marginStart="117dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText6"
+                        android:background="#f5ff03"
+                        android:textSize="30dp"/>
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText7"
+                        android:background="#f5ff03"
+                        android:textSize="30dp"/>
+
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText8"
+                        android:background="#f5ff03"
+                        android:textSize="30dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teamEditSpinner"
+                    android:background="#f5ff03" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/playerEditSpinner"
+                    android:background="#f5ff03"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Player"
+                    android:id="@+id/addPlayer"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remove Player"
+                    android:id="@+id/removePlayer"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inPlayerName"
+                    android:background="#fdff01"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Switch Player To"
+                    android:id="@+id/switchPlayer"
+                    android:textSize="25dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switchTeamSpinner"
+                    android:background="#f4ff05" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
 </RelativeLayout>
