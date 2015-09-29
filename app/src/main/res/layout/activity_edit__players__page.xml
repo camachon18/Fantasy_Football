@@ -8,16 +8,6 @@
     android:id="@+id/editPlayersMainLayout"
     android:background="#ff2ca04c">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Main Menu"
-        android:id="@+id/toMainMenu1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textSize="20sp" />
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -326,6 +316,32 @@
 
             <LinearLayout
                 android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Main Menu"
+                    android:id="@+id/toMainFromEdit"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="15dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIMULATE Game"
+                    android:id="@+id/toSimulateGame"
+                    android:textSize="15dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content">
 
@@ -334,6 +350,10 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/teamEditSpinner"
                     android:background="#f5ff03" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
 
                 <Spinner
                     android:layout_width="match_parent"
@@ -383,6 +403,7 @@
                     android:id="@+id/switchTeamSpinner"
                     android:background="#f4ff05" />
             </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 
