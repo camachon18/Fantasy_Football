@@ -20,10 +20,6 @@
             android:name=".Edit_Players_Page"
             android:label="@string/title_activity_edit__players__page" >
         </activity>
-        <activity
-            android:name=".Simulate_Game"
-            android:label="@string/title_activity_simulate__game" >
-        </activity>
     </application>
 
 </manifest>

@@ -3,24 +3,28 @@ package com.example.administrator.fantasyfootball;
 import java.io.Serializable;
 
 /**
- * Created by nathancamacho on 9/28/15.
+ * Nathan Camacho
+ * 9/27/15
+ * Class for Team objects. Each team object has a name, wins, draws, and losses attributes.
+ *
  */
 public class Team implements Serializable {
 
     private String name;
-    private int wins;
-    private int draws;
-    private int losses;
+    private String wins;
+    private String draws;
+    private String losses;
 
-    public Team(String newName,int newWins,int newDraws,int newLosses){
+    public Team(String newName,String newWins,String newDraws,String newLosses){
 
         this.name = newName;
         this.wins = newWins;
         this.draws = newDraws;
         this.losses = newLosses;
 
-    }
+    }//ctor
 
+    //Setters and getters for all variables of this class
     public String getName() {
         return name;
     }
@@ -29,27 +33,27 @@ public class Team implements Serializable {
         this.name = name;
     }
 
-    public int getWins() {
+    public String getWins() {
         return wins;
     }
 
-    public void setWins(int wins) {
+    public void setWins(String wins) {
         this.wins = wins;
     }
 
-    public int getDraws() {
+    public String getDraws() {
         return draws;
     }
 
-    public void setDraws(int draws) {
+    public void setDraws(String draws) {
         this.draws = draws;
     }
 
-    public int getLosses() {
+    public String getLosses() {
         return losses;
     }
 
-    public void setLosses(int losses) {
+    public void setLosses(String losses) {
         this.losses = losses;
     }
 }

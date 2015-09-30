@@ -1,23 +1,30 @@
 package com.example.administrator.fantasyfootball;
 
+import android.widget.ImageView;
+
 import java.io.Serializable;
 
 /**
- * Created by nathancamacho on 9/28/15.
+ *Nathan Camacho
+ * 9/26/15
+ * Player class.
+ * Each player object has stats, a name, and more.
+ *
  */
 public class Player implements Serializable {
 
     private String name;
     private String position;
-    private int number;
-    private int goals;
-    private int assists;
-    private int saves;
-    private int yellowCards;
-    private int redCards;
-    private int fouls;
+    private String number;
+    private String goals;
+    private String assists;
+    private String saves;
+    private String yellowCards;
+    private String redCards;
+    private String fouls;
+    private ImageView picture;//not implemented
 
-    public Player(String newName, String newPosition, int newNumber, int newGoals, int newAssists, int newSaves,int newYellowCards,int newRedCards,int newFouls){
+    public Player(String newName, String newPosition, String newNumber, String newGoals, String newAssists, String newSaves,String newYellowCards,String newRedCards,String newFouls){
 
         this.name = newName;
         this.position = newPosition;
@@ -29,8 +36,10 @@ public class Player implements Serializable {
         this.redCards = newRedCards;
         this.fouls = newFouls;
 
-    }
+    }//ctor
 
+
+    //Setters and getters for variables
     public String getName() {
         return name;
     }
@@ -47,59 +56,59 @@ public class Player implements Serializable {
         this.position = position;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
-    public int getGoals() {
+    public String getGoals() {
         return goals;
     }
 
-    public void setGoals(int goals) {
+    public void setGoals(String goals) {
         this.goals = goals;
     }
 
-    public int getAssists() {
+    public String getAssists() {
         return assists;
     }
 
-    public void setAssists(int assists) {
+    public void setAssists(String assists) {
         this.assists = assists;
     }
 
-    public int getSaves() {
+    public String getSaves() {
         return saves;
     }
 
-    public void setSaves(int saves) {
+    public void setSaves(String saves) {
         this.saves = saves;
     }
 
-    public int getYellowCards() {
+    public String getYellowCards() {
         return yellowCards;
     }
 
-    public void setYellowCards(int yellowCards) {
+    public void setYellowCards(String yellowCards) {
         this.yellowCards = yellowCards;
     }
 
-    public int getRedCards() {
+    public String getRedCards() {
         return redCards;
     }
 
-    public void setRedCards(int redCards) {
+    public void setRedCards(String redCards) {
         this.redCards = redCards;
     }
 
-    public int getFouls() {
+    public String getFouls() {
         return fouls;
     }
 
-    public void setFouls(int fouls) {
+    public void setFouls(String fouls) {
         this.fouls = fouls;
     }
 }

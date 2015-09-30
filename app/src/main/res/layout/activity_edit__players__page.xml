@@ -24,7 +24,8 @@
                 android:layout_width="200dp"
                 android:layout_height="250dp"
                 android:id="@+id/playerPic"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/my_pic" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -108,8 +109,8 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Goal"
-                    android:id="@+id/addGoal"
+                    android:text="Set Goal"
+                    android:id="@+id/setGoal"
                     android:layout_weight="1" />
 
                 <Space
@@ -120,8 +121,8 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Assist"
-                    android:id="@+id/addAssist"
+                    android:text="Set Assist"
+                    android:id="@+id/setAssist"
                     android:layout_weight="1" />
 
                 <Space
@@ -132,8 +133,8 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Save"
-                    android:id="@+id/addSave"
+                    android:text="Set Save"
+                    android:id="@+id/setSave"
                     android:layout_weight="1" />
 
                 <Space
@@ -223,8 +224,8 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Yellow Card"
-                    android:id="@+id/addYellowCard"
+                    android:text="Set Yellow Card"
+                    android:id="@+id/setYellowCard"
                     android:layout_weight="1" />
 
                 <Space
@@ -235,8 +236,8 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Red Card"
-                    android:id="@+id/addRedCard"
+                    android:text="Set Red Card"
+                    android:id="@+id/setRedCard"
                     android:layout_weight="1" />
 
                 <Space
@@ -247,8 +248,8 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Foul"
-                    android:id="@+id/addFoul"
+                    android:text="Set Foul"
+                    android:id="@+id/setFoul"
                     android:layout_weight="1" />
 
                 <Space
@@ -306,6 +307,46 @@
                     android:layout_weight="1" />
             </LinearLayout>
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET POSITION"
+                    android:id="@+id/setPositionButton"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET NUMBER"
+                    android:id="@+id/setNumberButton"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -331,13 +372,6 @@
                     android:textSize="15dp"
                     android:layout_weight="1" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SIMULATE Game"
-                    android:id="@+id/toSimulateGame"
-                    android:textSize="15dp"
-                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
